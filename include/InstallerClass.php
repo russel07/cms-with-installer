@@ -9,9 +9,9 @@ class InstallerClass extends DatabaseHandler {
     protected $connected = false;
 
     function connectDatabase(){
-        $driver = new mysqli_driver();
+        /*$driver = new mysqli_driver();
         $driver->report_mode = MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ERROR;
-        mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
+        mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);*/
         try{
             $this->con = new mysqli($this->db_host, $this->db_user, $this->db_password, $this->db_name);
             $this->connected = true;
